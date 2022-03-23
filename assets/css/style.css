@@ -1,0 +1,151 @@
+/*Changed color scheme for color blindness acessiblity*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/*Moved a, p selectors up to reflect semantic order.
+This is because they apply to the whole doc*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/*Header content*/
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*Moved the .header div selector up to reflect semantic order.
+This is because the selector is contained within header*/
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Main page content*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Moved .float-left and .float-right up to reflect semantic order.
+This is because these class tags are used in multiple instances across .content and creating new classes cuts redundancy*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*Created new classes that apply styles to elements uniformly across .content, arranged in semantic order
+This is because every single seperate element was already styled the same exact way*/
+.mpDiv{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.mpImg{
+    max-height: 200px;
+}
+
+.mpHeader{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+/*Sidebar content*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+}
+
+/*Created new classes that apply styles to elements uniformly across .benefits, arranged in semantic order
+This is for the same reasoning as the previous section*/
+.sbDiv{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.sbHeader{
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.sbImg{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/*Footer Content*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
