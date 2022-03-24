@@ -9,6 +9,16 @@ body {
     background-color: #d9dcd6;
 }
 
+nav{
+    text-align:right;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+
 /*Moved a, p selectors up to reflect semantic order.
 This is because they apply to the whole doc*/
 a {
